@@ -1,20 +1,20 @@
 {
-  "name": "H&H STUDIO NAILS",
-  "short_name": "HH Nails",
+  "name": "MILA'S Studio",
+  "short_name": "MILA'S",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/hhnails/",
-  "scope": "/hhnails/",
+  "start_url": "/milas-studio/",
+  "scope": "/milas-studio/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/hhnails/icons/icon-192x192.png",
+      "src": "/milas-studio/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/hhnails/icons/icon-512x512.png",
+      "src": "/milas-studio/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

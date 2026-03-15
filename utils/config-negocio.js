@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: H&H STUDIO NAILS
+// CLIENTE: MILA'S Studio
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = 'f0533089-d445-4ebf-b5c5-5abbcf90f4ce'; // ID de H&H STUDIO NAILS
+const NEGOCIO_ID_POR_DEFECTO = '2f33bd61-b04e-42dc-aa13-8d19338ae042'; // ID de MILA'S Studio
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'H&H STUDIO NAILS';
+    return config?.nombre || 'MILA\'S Studio';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '54101232';
+    return config?.telefono || '58316760';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'heylincuba@gmail.com';
+    return config?.email || 'yerbillaarmengol@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a H&H STUDIO NAILS!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a MILA\'S Studio!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'hhnails-notifications';
+    return config?.ntfy_topic || 'milas-studio-notifications';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para H&H STUDIO NAILS');
+console.log('✅ config-negocio.js listo para MILA\'S Studio');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);
